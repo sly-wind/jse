@@ -8,7 +8,7 @@ public class TimeCalc {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("초를 시간과 분과 초로 바꾸어Dream.");
-		
+		System.out.print("초: ");
 		int sec = sc.nextInt();
 		
 		int hour = sec / 3600; sec = sec % 3600;
