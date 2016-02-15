@@ -14,8 +14,15 @@ public class TimeCalc {
 		int hour = sec / 3600; sec = sec % 3600;
 		int min = sec / 60; sec = sec % 60;
 		
-		System.out.println(hour + "시간 " + min + "분 " + sec + "초.");
-	
+		if(hour > 0) 
+			System.out.println( hour + "시간 " + min + "분 " + sec + "초.");
+		else if(min > 0)
+			System.out.println( min + "분 " + sec + "초.");
+		else if(sec > 0)
+			System.out.println( sec + "초.");
+		else
+			System.out.println("음수는 넣지 마시죠ㅎㅎ");
+		
 		sc.close();
 	}
 }
